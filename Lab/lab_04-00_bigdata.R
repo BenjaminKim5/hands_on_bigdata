@@ -23,7 +23,7 @@ getwd()
 # 
 
 ## Step 1: 데이터 읽기
-text <- readLines("big_data_text", encoding="UTF-8")
+text <- readLines("data/big_data_text", encoding="UTF-8")
 tmp <- text
 
 tmp <- gsub("Big", "", tmp)
