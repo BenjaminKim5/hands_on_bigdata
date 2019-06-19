@@ -82,3 +82,5 @@ server <- function(input, output) {
 
 ## Running an App
 shinyApp(ui = ui, server = server)
+
+## -- END --
