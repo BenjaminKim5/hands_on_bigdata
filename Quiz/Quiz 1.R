@@ -31,6 +31,5 @@ dist_class
 barplot(dist_class, main="CLASS-II(등급)", xlab = "등급", ylab = "건수")
 barplot(dist_class, main="CLASS-II(등급)", xlab = "등급", ylab = "건수", names = c("A등급", "B등급", "c등급"), col = c("pink", "navy"))
 
-rowMeans(INV_QTY)
 
-
+## End

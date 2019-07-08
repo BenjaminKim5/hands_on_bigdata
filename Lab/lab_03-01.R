@@ -10,22 +10,27 @@
 x1 <- c(1,2,3,4,5,6,100)
 x1
 
-
+## max() 최대값
 max(x1)
 ## [1] 100
 
+## min() 최소값
 min(x1)
 ## [1] 1
 
+## sum() 합계
 sum(x1)
 ## [1] 121
 
+## mean() 평균
 mean(x1)
 ## [1] 17.28571
 
+## median() 중간값
 median(x1)
 ## [1] 4
 
+## summary() 요약통계 반환
 summary(x1)
 ## Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 ## 1.00    2.50    4.00   17.29    5.50  100.00 
@@ -36,21 +41,28 @@ summary(x1)
 y1 <- c(3, 5, 8, 11, 1)
 y1
 
+## cumsum() 설정된 지점까지 누적함
 cumsum(y1)
 ## [1]  3  8 16 27 28
 
+## cumprod() 설정된 지점까지 누적곱
 cumprod(y1)
 ## [1]    3   15  120 1320 1320
 
+## diff() 차이를 계산, B-A
 diff(y1)
 ## [1]   2   3   3 -10
 
+## order() 정렬하기 위한 각 원소의 인덱스를 반환
 order(y1)
 ## [1] 5 1 2 3 4
+## (5)1-(1)3-(2)5-(3)8-(4)11
 
+## rank() 각 원소의 순위를 출력
 rank(y1)
 ## [1] 2 3 4 5 1
 
+# range() 최소값과 최대값을 반환
 range(y1)
 ## [1]  1 11
 
@@ -68,6 +80,7 @@ View(x2)
 head(x2)
 str(x2)
 
+## 행 평균
 rowMeans(x2)
 ## [1] 45 55 65 75
 
@@ -76,6 +89,7 @@ rowMeans(x2)
 # mean(c(50, 80))
 # mean(c(60, 90))
 
+## 열 평균
 colMeans(x2)
 ## English    Math 
 ## 45      75 
@@ -87,7 +101,7 @@ colMeans(x2)
 ## Step 4: rowCounts()
 ##
 # install.packages("matrixStats")
-# library(matrixStats)
+library(matrixStats)
 x3 <- matrix(0:11, nrow = 4, ncol = 3)
 x3[2:3, 2:3] <- 2:5
 x3[3, 3] <- NA_integer_
@@ -127,18 +141,10 @@ print(colAlls(x3, value = 2))
 ## ======================================
 ## Step 5: ColCounts()
 ##
-
-
-## ======================================
-## Step 6: ColCounts()
-##
-
-getwd()
-setwd("C:/500_Lab/Lab190522/Lab")
-getwd()
-
-
 y2 <- read.csv("data/공기업데이터.csv")
 View(y2)
 
-  
+
+colCounts(y2, value = 1)
+
+## End  
