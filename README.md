@@ -30,7 +30,8 @@
 - Quiz 2
 - Quiz 3
 
-##
+---
+## 소프트웨어 정보 (19.07.10)
 - Download Microsoft R Open 3.5.3 : https://mran.microsoft.com/download
 - Download R 3.6.1                : https://cran.rstudio.com/
 - Download RStudio-1.2.1335       : https://www.rstudio.com/products/rstudio/
