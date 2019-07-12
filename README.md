@@ -37,7 +37,8 @@
 - Quiz 3
 ---
 ### 지오코딩 관련 
-
+- Geocoder-Xr-2019-v3.5.zip : 주소좌표 변환 툴
+- 주소 좌표 변환 툴_Geocoder-Xr.pdf : 간단 사용설명서
 ---
 ## 소프트웨어 정보 (19.07.10)
 - Download Microsoft R Open 3.5.3 : https://mran.microsoft.com/download
