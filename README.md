@@ -1,13 +1,15 @@
 # Hands-on exercise  with big data
 
 ---
-## 폴더 
-### Lab
-### Lab_Excel
-### Lab_SM
+## 1. Folder List
+> #### /lab
+>> #### /data
+> #### /Lab_Excel
+> #### /Lab_SM
 
 ---
-###
+## 2. File List
+### 
 - lab_01-01 : 엑셀로 데이터 과학 맛보기 
 - lab_02-02 : R로 데이터 과학 맛보기
 - summary_01: 파일 입력/출력
