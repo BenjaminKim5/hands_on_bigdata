@@ -1,5 +1,7 @@
 # Hands-on Exercise with Big data
 ---
+update: 19.09.25
+
 ## 1. Folder List
 > #### /lab
 >> #### /data
