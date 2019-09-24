@@ -44,3 +44,11 @@
 - Download Microsoft R Open 3.5.3 : https://mran.microsoft.com/download
 - Download R 3.6.1                : https://cran.r-project.org/bin/windows/base/
 - Download RStudio-1.2.5001       : https://www.rstudio.com/products/rstudio/
+
+---
+## 참고 사이트 (19.09.25)
+- SUMSUNG SDS Brighics AI : http://www.brightics.ai/kr
+- Download SUMSUNG SDS Brighics Studio : http://www.brightics.ai/kr/downloads
+
+
+
