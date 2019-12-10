@@ -1,5 +1,5 @@
 ##
-## mini Project 03 : 랜덤 숫자 맞추기 게임
+## mini Project 03b : 랜덤 숫자 맞추기 게임
 ##
 ## update: 19.12.11
 
@@ -31,7 +31,7 @@ GuessGame <- function() {
   # 숫자 추측 게임 시작
   print("+++ 숫자 맞추기 게임 (Guessing Game) +++")
   
-  # 답을 맞추거나 반복 횟수가 10회가 넘지 않을 때까지 반복
+  # 답을 맞추거나 반벅회수가 10회가 넘지 않을 때까지 반복
   for(loop in 1: 10){
     #print("숫자를 맞춰보세요")
     cat("숫자를 맞춰보세요(", loop,")")
@@ -47,6 +47,10 @@ GuessGame <- function() {
       print("답은 더 큰 숫자입니다.")
     } else  {
       print("답은 더 작은 숫자입니다.")
+    }
+    
+    if(loop == 10){
+      cat("==> 아쉽지만 정답은 ", target_num, "입니다")
     }
   }
 }

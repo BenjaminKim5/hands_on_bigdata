@@ -1,5 +1,5 @@
 ##
-## mini Project 03 : 랜덤 숫자 맞추기 게임
+## mini Project 03c : 랜덤 숫자 맞추기 게임
 ##
 ## update: 19.12.11
 
@@ -24,14 +24,15 @@
 ## =====================================================
 
 # 02-1 숫자 추측 게임을 GuessGame() 함수 구현
-GuessGame <- function() {
+# GuessGame(램덤수 시작값(st), 램덤수 종료값(ed))
+GuessGame <- function(st, ed) {
   # 프로그램 답을 1~100의 숫자 중 랜덤 지점
-  target_num <- sample(1:100, 1)
+  target_num <- sample(st:ed, 1)
   
   # 숫자 추측 게임 시작
   print("+++ 숫자 맞추기 게임 (Guessing Game) +++")
   
-  # 답을 맞추거나 반복 횟수가 10회가 넘지 않을 때까지 반복
+  # 답을 맞추거나 반벅회수가 10회가 넘지 않을 때까지 반복
   for(loop in 1: 10){
     #print("숫자를 맞춰보세요")
     cat("숫자를 맞춰보세요(", loop,")")
@@ -41,17 +42,24 @@ GuessGame <- function() {
 
     # 프로그램 답과 게이머 답 비교 후 겨로가 메세지 출력
     if(guess_num == target_num) {
-      cat("출하합니다. 정답니다.", loop, "번만에 맞첬습니다.")
+      cat("출하합니다. 정답니다.", loop, "번민에 맞첬습니다.")
       break
     } else if (guess_num < target_num) {
       print("답은 더 큰 숫자입니다.")
     } else  {
       print("답은 더 작은 숫자입니다.")
     }
+    
+    if(loop == 10){
+      cat("==> 아쉽지만 정답은 ", target_num, "입니다")
+    }
   }
 }
 
 ## 02-2 실행
-GuessGame()
-  
+# 램덤수 1 ~ 5, 10~50 
+GuessGame(1, 5)
+
+GuessGame(1, 50)
+
 ## END
