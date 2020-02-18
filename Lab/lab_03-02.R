@@ -1,7 +1,7 @@
 ##
-## SCperf function
+## lab_03_02.R : SCperf function
 ##
-##
+## update: 20.02.18
 
 ## 연간 수요량(Demand) d = 8000 EA
 ## 주문당 고정 비용(Setup Cost) k = 12000 USD
@@ -44,4 +44,4 @@ WW(x,a,h,method="backward")
 
 WW(x,a,h,method="forward")
 
-## -- END --
+## END ##

@@ -1,9 +1,19 @@
 ##
-## 기술통계함수
-## 
+## lab_03_01.R : 기술통계함수
 ##
+## update: 20.02.18
 
-# rm(list=ls())
+## 기본환경 설정
+getwd()
+setwd("D:/500_Lab/Lab200219/Lab")
+getwd()
+
+## enviroment clean: 환경데이터 제거하기
+rm(list=ls())
+## Plots clean: Plot  제거하기
+#dev.off()
+if(!is.null(dev.list())) dev.off()
+
 ## ======================================
 ## Step 1: max(), main(), sum(), median()
 ##
@@ -70,9 +80,6 @@ range(y1)
 ## ======================================
 ## Step 3: rowMeans(), colMeans()
 ##
-getwd()
-setwd("C:/500_Lab/Lab190522/Lab")
-getwd()
 
 # Sys.setlocale("LC_ALL", "korean")
 x2 <- read.csv("data/기술통계함수데이터.csv")
@@ -138,13 +145,4 @@ print(colAlls(x3, value = 2))
 ## [1] FALSE FALSE FALSE
 
 
-## ======================================
-## Step 5: ColCounts()
-##
-y2 <- read.csv("data/공기업데이터.csv")
-View(y2)
-
-
-colCounts(y2, value = 1)
-
-## End  
+## End ##

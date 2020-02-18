@@ -1,10 +1,14 @@
-## [Quiz 1]
+##
+## Quiz 1.R : Quiz 1
+##
+## update: 20.02.18
+
 ## 문자형으로 이루어진 데이터 1, 2, 3, 4, 5 는 ITEM_ID 변수, 
 ## 숫자형으로 이루어진 데이터 10, 25, 100, 75, 30 은 INV_QTY 변수, 
 ## 문자형으로 이루어진 데이터 A, B C, A, B은 CLASS 변수로 
 ## 구성한 결과는? 
 
-# #Delete Data Set
+##Delete Data Set
 # remove(ITEM_ID, INV_QTY, CLASS)
 # remove(INV_frame)
 # remove(dist_class)
@@ -32,4 +36,4 @@ barplot(dist_class, main="CLASS-II(등급)", xlab = "등급", ylab = "건수")
 barplot(dist_class, main="CLASS-II(등급)", xlab = "등급", ylab = "건수", names = c("A등급", "B등급", "c등급"), col = c("pink", "navy"))
 
 
-## End
+## End ##

@@ -1,6 +1,7 @@
 ##
-## Shiny example : Hello Shiny!
+## lab_03_03.R : Shiny example : Hello Shiny!
 ##
+## update: 20.02.18
 
 # install.packages("shiny")
 
@@ -83,4 +84,4 @@ server <- function(input, output) {
 ## Running an App
 shinyApp(ui = ui, server = server)
 
-## -- END --
+## END ##
