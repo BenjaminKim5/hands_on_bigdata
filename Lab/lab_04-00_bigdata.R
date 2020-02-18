@@ -1,23 +1,35 @@
 ##
-## Big data opportunities 문장 분석
-## 
+## lab_04_00.R : Big data opportunities 문장 분석 
 ##
+## update: 20.02.18
 
-# install.packages("wordcloud2")
-# install.packages("KoNLP")
-library(wordcloud2)
-library(KoNLP)
-# useSejongDic()
+## 기본환경 설정
+getwd()
+setwd("D:/500_Lab/Lab200219/Lab")
+getwd()
+
+## enviroment clean: 환경데이터 제거하기
+rm(list=ls())
+## Plots clean: Plot  제거하기
+#dev.off()
+if(!is.null(dev.list())) dev.off()
+
+install.packages(c("stringr", "wordcloud2"))
+install.packages("rJava")
+install.packages("KoNLP")
+
 library(stringr)
+library(wordcloud2)
+library(rJava)
+library(KoNLP)
+useSejongDic()
 
-
-getwd()
-setwd("C:/500_Lab/Lab190522/Lab")
-getwd()
+# Sys.setenv(JAVA_HOME='D:\\Java\\jre1.8.0_241')
 
 # # tmp <- read.table("big_data_text", header = FALSE, fill = TRUE)
 # tmp <- read.table("big_data_text", header = FALSE)
 # head(tmp)
+
 # 
 # wordcloud2(tmp)
 # 
@@ -60,5 +72,7 @@ text3 <- table(text2)
 wordcloud2(text3, size = 1)
 wordcloud2(text3, size = 1,shape = 'star')
 
-## End 
+## error: JAVA_HOME cannot be determined from the Registry
+
+## End ##
 

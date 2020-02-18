@@ -1,7 +1,7 @@
 ##
-## Visualization
+## lab_04_01.R : Visualization 
 ##
-##
+## update: 20.02.18
 
 # remove.packages(c("ggplot2", "data.table"))
 # install.packages('ggplot2', dep = TRUE)
@@ -91,6 +91,6 @@ M2 <- gvisMotionChart(Fruits, idvar="Fruit", timevar="Date",
                       date.format = "%Y%m%d") 
 plot(M2)
 
-  
+## END ##  
 
 
