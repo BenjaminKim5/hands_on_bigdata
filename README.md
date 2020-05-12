@@ -55,9 +55,9 @@ update: 19.09.25
 - Download RStudio-1.2.5042       : https://rstudio.com/products/rstudio/download/#download
 
 ---
-## 참고 사이트 (20.04.14)
+## 참고 사이트 (20.05.12)
 - SUMSUNG SDS Brighics AI : http://www.brightics.ai/kr
-- Download SUMSUNG SDS Brighics Studio : http://www.brightics.ai/kr/downloads
+- Download SUMSUNG SDS Brighics Studio 1.1-2020.04 (2020-04-28) : http://www.brightics.ai/kr/downloads
 - Brightics Studio releases note(GitHub): https://github.com/brightics/studio/releases
 
 
