@@ -1,9 +1,14 @@
 ##
 ## PSI
 ## 
-##
+## update: 20.05.14
 
-# Sys.setlocale("LC_ALL", "korean")
+getwd()
+setwd("D:/500_Lab/Lab200215/Lab")
+getwd()
+
+Sys.setlocale("LC_ALL", "korean")
+
 # install.packages("readxl")
 # install.packages("ggplot2")
 # install.packages("dplyr")
@@ -11,20 +16,17 @@
 library(readxl)
 library(ggplot2)
 
-getwd()
-setwd("C:/500_Lab/Lab190522/Lab")
-getwd()
-
 ## Step 1: 원본 데이터 가져오기
 psi_data <- read_excel("data/PSI_data.xlsx")
 View(psi_data)
 
 ## If 데이터에 NA 값을 0 로 수정
-# psi_data[is.na(psi_data)] <- 0
+psi_data[is.na(psi_data)] <- 0
 
 ## 데이터 그룹화 검색
 library(dplyr)
 tmp <- group_by(psi_data, psi_data$일자) %>% summarise(n()) 
+
 # arrange(tmp$`n()`, tmp$`psi_data$일자`)
 View(tmp)
 
@@ -68,29 +70,18 @@ hist(tmp$재고량, main="재고량 분포")
 ## 히스토그램       geom_histogram( )
 ## 막대 그래프      geom_bar( )
 
+Item_data <- filter(psi_data, psi_data$품목코드=="Item_100" )
 ## P: 생산량
-ggplot(psi_data, aes(x=일자, y=생산량 )) + geom_line()
-ggplot(tmp, aes(x=일자, y=생산량 )) + geom_line()
-
-ggplot(psi_data, aes(x=일자, y=생산량 )) + geom_bar()
-
-
-tmp <- filter(psi_data, psi_data$품목코드=="Item_032" )
-
+ggplot(data=Item_data, aes(x=일자,y=생산량)) + geom_line(size=1.5, color="red")
 ## S: 판매량
-ggplot(psi_data, aes(x=일자, y=판매량 )) + geom_line()
-ggplot(tmp, aes(x=일자, y=판매량 ), fill='#CC3399') + geom_line()
+ggplot(data=Item_data, aes(x=일자,y=판매량)) + geom_line(size=1.5, color="blue")
+## I: 재고
+ggplot(data=Item_data, aes(x=일자, y = 재고량)) + geom_area(fill="green", alpha=0.2)
 
-
-## I
-#ggplot(psi_data, aes(재고량)) + geom_histogram()
-ggplot(psi_data, aes(x = 일자, y = 재고량)) + geom_bar(stat = "재고량")
-
-
-ggplot(psi_data, aes(재고량), fill='red') + geom_area(stat='count')
-ggplot(psi_data, aes(x=일자, y = 재고량, fill = 'red')) + geom_area()
-#table(psi_data$재고량)
-
-ggplot(tmp, aes(x=일자, y = 재고량)) + geom_area()
+## PSI 통합 그래프
+ggplot(data=Item_data, aes(x=일자,y=생산량)) +
+ geom_line(size=1.5, color="red") +
+ geom_line(data=Item_data, aes(x=일자,y=판매량), size=1.5, color="blue") +
+ geom_area(data=Item_data, aes(x=일자,y=재고량),fill="green", alpha=0.2)
 
 
