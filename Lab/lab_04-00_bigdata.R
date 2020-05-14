@@ -1,11 +1,12 @@
 ##
 ## lab_04_00.R : Big data opportunities 문장 분석 
-##
+##  R-3.6.3 (32bit)
 ## update: 20.02.18
+## update: 20.05.14
 
 ## 기본환경 설정
 getwd()
-setwd("D:/500_Lab/Lab200219/Lab")
+setwd("D:/500_Lab/Lab200515/Lab")
 getwd()
 
 ## enviroment clean: 환경데이터 제거하기
@@ -14,9 +15,19 @@ rm(list=ls())
 #dev.off()
 if(!is.null(dev.list())) dev.off()
 
+## package remove
+remove.packages("stringr")
+remove.packages("wordcloud2")
+remove.packages("rJava")
+remove.packages("KoNLP")
+
+## instal Package
 install.packages(c("stringr", "wordcloud2"))
 install.packages("rJava")
 install.packages("KoNLP")
+
+# Sys.setenv(JAVA_HOME='D:\\Java\\jre1.8.0_251')
+Sys.getenv("JAVA_HOME")
 
 library(stringr)
 library(wordcloud2)
@@ -24,7 +35,6 @@ library(rJava)
 library(KoNLP)
 useSejongDic()
 
-# Sys.setenv(JAVA_HOME='D:\\Java\\jre1.8.0_241')
 
 # # tmp <- read.table("big_data_text", header = FALSE, fill = TRUE)
 # tmp <- read.table("big_data_text", header = FALSE)
