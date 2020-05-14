@@ -2,6 +2,7 @@
 ## lab_03_03.R : Shiny example : Hello Shiny!
 ##
 ## update: 20.02.18
+## update: 20.05.14
 
 # install.packages("shiny")
 

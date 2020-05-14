@@ -2,10 +2,12 @@
 ## lab_03_01.R : 기술통계함수
 ##
 ## update: 20.02.18
+## update: 20.05.14
+
 
 ## 기본환경 설정
 getwd()
-setwd("D:/500_Lab/Lab200219/Lab")
+setwd("D:/500_Lab/Lab200515/Lab")
 getwd()
 
 ## enviroment clean: 환경데이터 제거하기
