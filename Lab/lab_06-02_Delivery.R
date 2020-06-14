@@ -4,11 +4,30 @@
 ## update: 20.06.14
 ## update: 20.05.14
 
+## =====================================================
+## 01. 환경정보 초기화
+## =====================================================
+
+## enviroment clean: 환경데이터 제거하기
+rm(list=ls())
+## Plots clean: Plot  제거하기
+#dev.off()
+if(!is.null(dev.list())) dev.off()
+
+## Check 한글 모드 
+Sys.getlocale()
+## [1] "LC_COLLATE=English_United States.1252;LC_CTYPE=English_United States.1252;LC_MONETARY=English_United States.1252;LC_NUMERIC=C;LC_TIME=English_United States.1252"
+Sys.setlocale("LC_ALL", "korean")
+## [1] "LC_COLLATE=Korean_Korea.949;LC_CTYPE=Korean_Korea.949;LC_MONETARY=Korean_Korea.949;LC_NUMERIC=C;LC_TIME=Korean_Korea.949"
+
+## work dirtory 
 getwd()
 setwd("D:/500_Lab/Lab200515/Lab")
 getwd()
 
-Sys.setlocale("LC_ALL", "korean")
+## =====================================================
+## 02. Main
+## =====================================================
 
 # install.packages("readxl")
 # install.packages("ggplot2")
@@ -76,7 +95,7 @@ ggplot(data=dv_data, aes(x=운행거리,y=운행시간)) +
 
 # 최대 운행거리의 배송처 찾기
 tIdx <- which.max(dv_data$운행거리)
-tIdx
+#tIdx
 tDevDis01 <- dv_data$운행거리[tIdx]
 tDevTime01 <- dv_data$운행시간[tIdx]
 tDevCode01 <- dv_data$배송처코드[tIdx]
