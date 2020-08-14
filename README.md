@@ -51,11 +51,11 @@ update: 19.09.25
 - Geocoder-Xr-2019-v3.5.zip : 주소좌표 변환 툴
 - 주소 좌표 변환 툴_Geocoder-Xr.pdf : 간단 사용설명서
 ---
-## 소프트웨어 정보 (20.05.13)
+## 소프트웨어 정보 (20.08.13)
 - Download Microsoft R Open 3.5.3 : https://mran.microsoft.com/download
 - Download R 4.0.2                : https://cran.r-project.org/bin/windows/base/
 - Download R 3.6.3 (실습용)        : https://cran.r-project.org/bin/windows/base/old/3.6.3/
-- Download RStudio-1.2.5042       : https://rstudio.com/products/rstudio/download/#download
+- Download RStudio-1.3.1073       : https://rstudio.com/products/rstudio/download/#download
 
 ---
 ## 참고 사이트 (20.05.12)
