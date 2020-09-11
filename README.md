@@ -60,7 +60,7 @@ update: 19.09.25
 ---
 ## 참고 사이트 (20.05.12)
 - SUMSUNG SDS Brighics AI : http://www.brightics.ai/kr
-- Download SUMSUNG SDS Brighics Studio 1.1-2020.04 (2020-04-28) : http://www.brightics.ai/kr/downloads
+- Download SUMSUNG SDS Brighics Studio 1.1-2020.07 (2020-09-11) : http://www.brightics.ai/kr/downloads
 - Brightics Studio releases note(GitHub): https://github.com/brightics/studio/releases
 
 
