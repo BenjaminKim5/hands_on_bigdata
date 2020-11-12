@@ -3,10 +3,11 @@
 ##  R-3.6.3 (32bit)
 ## update: 20.02.18
 ## update: 20.05.14
+## update: 20.11.12
 
 ## 기본환경 설정
 getwd()
-setwd("D:/500_Lab/Lab200515/Lab")
+setwd("D:/500_Lab/Lab201113/Lab")
 getwd()
 
 ## enviroment clean: 환경데이터 제거하기
