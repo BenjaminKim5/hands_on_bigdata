@@ -2,11 +2,13 @@
 ## 공간 가시화
 ## 
 ## update: 20.05.14
+## update: 20.11.12
 
 getwd()
-setwd("C:/500_Lab/Lab200515/Lab")
+setwd("D:/500_Lab/Lab201113/Lab")
 getwd()
 
+Sys.getlocale()
 Sys.setlocale("LC_ALL", "korean")
 
 # install.packages("readxl")
@@ -29,7 +31,6 @@ psi_data[is.na(psi_data)] <- 0
 
 tmp <- inner_join(psi_data, psi_master)
 View(psi_data)
-View(psi_master)
 View(tmp)
 
 tmp$V_보관장 <- tmp$재고량 * tmp$보관장체적

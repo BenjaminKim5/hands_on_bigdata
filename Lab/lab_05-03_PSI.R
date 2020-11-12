@@ -2,11 +2,13 @@
 ## PSI
 ## 
 ## update: 20.05.14
+## update: 20.11.12
 
 getwd()
-setwd("D:/500_Lab/Lab200215/Lab")
+setwd("D:/500_Lab/Lab201113/Lab")
 getwd()
 
+Sys.getlocale()
 Sys.setlocale("LC_ALL", "korean")
 
 # install.packages("readxl")
@@ -25,6 +27,7 @@ psi_data[is.na(psi_data)] <- 0
 
 ## 데이터 그룹화 검색
 library(dplyr)
+## 건수 =  n()
 tmp <- group_by(psi_data, psi_data$일자) %>% summarise(n()) 
 
 # arrange(tmp$`n()`, tmp$`psi_data$일자`)
@@ -32,6 +35,7 @@ View(tmp)
 
 ## 2012-01-10, 2012-01-11
 tmp <- filter(psi_data, psi_data$품목코드=="Item_011" , psi_data$생산량 > 0)
+View(tmp)
 
 ## 생산량(P) 데이터 시각화 
 plot(tmp$생산량)
@@ -81,7 +85,7 @@ ggplot(data=Item_data, aes(x=일자, y = 재고량)) + geom_area(fill="green", a
 ## PSI 통합 그래프
 ggplot(data=Item_data, aes(x=일자,y=생산량)) +
  geom_line(size=1.5, color="red") +
- geom_line(data=Item_data, aes(x=일자,y=판매량), size=1.5, color="blue") +
- geom_area(data=Item_data, aes(x=일자,y=재고량),fill="green", alpha=0.2)
+ geom_line(size=1.5, color="blue", data=Item_data, aes(x=일자,y=판매량) ) +
+ geom_area(fill="green", alpha=0.2, data=Item_data, aes(x=일자,y=재고량))
 
 

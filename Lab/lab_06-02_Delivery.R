@@ -3,39 +3,40 @@
 ## 
 ## update: 20.06.14
 ## update: 20.05.14
+## update: 20.11.12
 
 ## =====================================================
 ## 01. 환경정보 초기화
 ## =====================================================
 
-## enviroment clean: 환경데이터 제거하기
-rm(list=ls())
-## Plots clean: Plot  제거하기
-#dev.off()
-if(!is.null(dev.list())) dev.off()
+  ## enviroment clean: 환경데이터 제거하기
+  rm(list=ls())
+  ## Plots clean: Plot  제거하기
+  #dev.off()
+  if(!is.null(dev.list())) dev.off()
 
-## Check 한글 모드 
-Sys.getlocale()
-## [1] "LC_COLLATE=English_United States.1252;LC_CTYPE=English_United States.1252;LC_MONETARY=English_United States.1252;LC_NUMERIC=C;LC_TIME=English_United States.1252"
-Sys.setlocale("LC_ALL", "korean")
-## [1] "LC_COLLATE=Korean_Korea.949;LC_CTYPE=Korean_Korea.949;LC_MONETARY=Korean_Korea.949;LC_NUMERIC=C;LC_TIME=Korean_Korea.949"
+  ## Check 한글 모드 
+  Sys.getlocale()
+  ## [1] "LC_COLLATE=English_United States.1252;LC_CTYPE=English_United States.1252;LC_MONETARY=English_United States.1252;LC_NUMERIC=C;LC_TIME=English_United States.1252"
+  Sys.setlocale("LC_ALL", "korean")
+  ## [1] "LC_COLLATE=Korean_Korea.949;LC_CTYPE=Korean_Korea.949;LC_MONETARY=Korean_Korea.949;LC_NUMERIC=C;LC_TIME=Korean_Korea.949"
 
-## work dirtory 
-getwd()
-setwd("D:/500_Lab/Lab200515/Lab")
-getwd()
+  ## work dirtory 
+  getwd()
+  setwd("D:/500_Lab/Lab201113/Lab")
+  getwd()
 
 ## =====================================================
 ## 02. Main
 ## =====================================================
 
-# install.packages("readxl")
-# install.packages("ggplot2")
-# install.packages("dplyr")
-
-library(readxl)
-library(ggplot2)
-library(dplyr)
+  # install.packages("readxl")
+  # install.packages("ggplot2")
+  # install.packages("dplyr")
+  
+  library(readxl)
+  library(ggplot2)
+  library(dplyr)
 
 ## Step 1: 원본 데이터 가져오기
 dv_data <- read_excel("data/lab_06-02_delivery_data.xlsx", sheet="Sheet2")

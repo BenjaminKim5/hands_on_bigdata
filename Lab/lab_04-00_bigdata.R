@@ -6,35 +6,35 @@
 ## update: 20.11.12
 
 ## 기본환경 설정
-getwd()
-setwd("D:/500_Lab/Lab201113/Lab")
-getwd()
+  getwd()
+  setwd("D:/500_Lab/Lab201113/Lab")
+  getwd()
 
-## enviroment clean: 환경데이터 제거하기
-rm(list=ls())
-## Plots clean: Plot  제거하기
-#dev.off()
-if(!is.null(dev.list())) dev.off()
+  ## enviroment clean: 환경데이터 제거하기
+  rm(list=ls())
+  ## Plots clean: Plot  제거하기
+  #dev.off()
+  if(!is.null(dev.list())) dev.off()
 
 ## package remove
-remove.packages("stringr")
-remove.packages("wordcloud2")
-remove.packages("rJava")
-remove.packages("KoNLP")
+#  remove.packages("stringr")
+#  remove.packages("wordcloud2")
+#  remove.packages("rJava")
+#  remove.packages("KoNLP")
 
 ## instal Package
-install.packages(c("stringr", "wordcloud2"))
-install.packages("rJava")
-install.packages("KoNLP")
+  install.packages(c("stringr", "wordcloud2"))
+  install.packages("rJava")
+  install.packages("KoNLP")
 
 # Sys.setenv(JAVA_HOME='D:\\Java\\jre1.8.0_251')
-Sys.getenv("JAVA_HOME")
+  Sys.getenv("JAVA_HOME")
 
-library(stringr)
-library(wordcloud2)
-library(rJava)
-library(KoNLP)
-useSejongDic()
+  library(stringr)
+  library(wordcloud2)
+  library(rJava)
+  library(KoNLP)
+  useSejongDic()
 
 
 # # tmp <- read.table("big_data_text", header = FALSE, fill = TRUE)
