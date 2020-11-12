@@ -66,6 +66,8 @@ F2 <- scan(n=2)
 F3 <- F1[1] * F2[1]
 F4 <- F1[2] * F2[2]
 F5 <- array(F3, F4)
+
+print("--- End ---")
 # rm(F5)
 
 
