@@ -53,7 +53,7 @@ update: 19.09.25
 ---
 ## 소프트웨어 정보 (21.03.15)
 - Download Microsoft R Open 3.5.3 : https://mran.microsoft.com/download
-- Download R 4.0.2                : https://cran.r-project.org/bin/windows/base/
+- Download R 4.0.4                : https://cran.r-project.org/bin/windows/base/
 - Download R 3.6.3 (실습용)       : https://cran.r-project.org/bin/windows/base/old/3.6.3/
 - Download RStudio-1.4.1106       : https://rstudio.com/products/rstudio/download/#download
 
