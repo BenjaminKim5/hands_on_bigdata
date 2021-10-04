@@ -58,7 +58,7 @@ update: 19.09.25
 - Download RStudio-2021.09.0+351  : https://rstudio.com/products/rstudio/download/#download
 - RStudio Cloud                   : https://www.rstudio.com/products/cloud/
 ---
-## 참고 사이트 (20.11.12)
+## 참고 사이트 (21.10.04)
 - SUMSUNG SDS Brighics AI : http://www.brightics.ai/kr
 - Download SUMSUNG SDS Brighics Studio 1.2-2021.09.06 (2020-09-06) : http://www.brightics.ai/kr/downloads
 - Brightics Studio releases note(GitHub): https://github.com/brightics/studio/releases
